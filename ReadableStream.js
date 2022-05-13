@@ -4,5 +4,5 @@ const readStream = fs.createReadStream('./docs/text.txt')
 
 readStream.on('data', (chunk) => {
     console.log('------------')
-    console.log(chunk)
+    console.log(chunk.toString())
 })
